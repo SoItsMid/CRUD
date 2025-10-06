@@ -8,10 +8,12 @@ import { useColorMode} from './ui/color-mode';
 import { IoMoon } from "react-icons/io5"
 import { LuSun } from "react-icons/lu"
 
+
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <Container maxW={"95%"} px={4}>
+    <Container maxW={"95%"} px={4} pt={2}>
         <Flex
         h={16}
         alignContent={"center"}
@@ -34,7 +36,7 @@ const Navbar = () => {
                     <Link to={"/"}>Product Store 🛒</Link>
             </Text>
 
-            <HStack spacing={20} alignItems={"center"}>
+            <HStack spaceX={5} alignItems={"center"}>
                 <Link to={"/create"}>
                     <Button>
                         {/* <PlusSquareIcon fontSize={20} /> */}
